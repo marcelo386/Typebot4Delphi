@@ -2,6 +2,7 @@ package Typebot4Delphi;
 
 {$R *.res}
 {$R *.dres}
+{$R *.dcr}
 {$IFDEF IMPLICITBUILDING This IFDEF should not be used by users}
 {$ALIGN 8}
 {$ASSERTIONS ON}
