@@ -36,7 +36,6 @@ type
   private
     FOnRetSendMessage: TOnRetSendMessage;
     FOnResponse: TResponseEvent;
-
     FEmoticons: TTypebotAPIEmoticons;
     FUrlTypebot: string;
     function CaractersWeb(vText: string): string;
@@ -50,8 +49,7 @@ type
 
     function GetContentTypeFromDataUri(const ADataUri: string): string;
     function GetContentTypeFromExtension(const AContentType: string): string;
-    function GetExtensionTypeFromContentType(const AFileExtension
-      : string): string;
+    function GetExtensionTypeFromContentType(const AFileExtension: string): string;
     function GetTypeFileFromContentType(const AContentType: string): string;
 
     procedure StartServer;
@@ -59,8 +57,7 @@ type
 
   published
     property UrlTypebot: string read FUrlTypebot write FUrlTypebot;
-    property OnRetSendMessage: TOnRetSendMessage read FOnRetSendMessage
-      write FOnRetSendMessage;
+    property OnRetSendMessage: TOnRetSendMessage read FOnRetSendMessage write FOnRetSendMessage;
     property OnResponse: TResponseEvent read FOnResponse write FOnResponse;
     Property Emoticons: TTypebotAPIEmoticons read FEmoticons write FEmoticons;
   end;
